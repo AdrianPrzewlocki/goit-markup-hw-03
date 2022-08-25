@@ -172,9 +172,11 @@ body {
 }
 
 .assets__list {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
     list-style-type: none;
+    gap: 30px;
     line-height: 1.6;
-    column-count: 4;
     padding-left: 0;
 }
 
@@ -199,11 +201,10 @@ body {
     background-color: var(--background-color);
 }
 
-.about_work__container {
+.about_work__box {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 1200px;
     margin: 0 auto;
 }
 
@@ -218,9 +219,12 @@ body {
 
 .about_work__list {
     list-style-type: none;
-    display: flex;
-    justify-content: space-around;
+    /* display: flex;
+    justify-content: space-around; */
     padding-left: 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
 }
 
 /* our team */
@@ -355,6 +359,10 @@ body {
 .footer {
     background-color: var(--background-dark);
     height: 252px;
+}
+
+.contact__box {
+    padding: 60px 0;
 }
 
 .logo__bottom {
