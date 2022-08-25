@@ -26,14 +26,16 @@ body {
     width: 1600px;
 }
 
+/* global helping class */
+
 .container {
     width: 1200px;
     padding: 0 15px;
 } 
 
 .section {
-    padding: 0 0 94px 0;
-} */
+    padding: 94px 0;
+} 
 
 /* header */
 
@@ -47,7 +49,6 @@ body {
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
-    width: 1200px;
     height: 80px;
     
 }
@@ -115,7 +116,6 @@ body {
 
 .main__title {
     background-color: var(--background-dark);
-    margin-bottom: 94px;
 }
 
 .title__container {
@@ -162,13 +162,11 @@ body {
 
 .assets {
     background-color: var(--background-color);
-    margin-bottom: 94px;
-    
+    padding-bottom: 0;
 }
 
 .assets__container {
     display: flex;
-    width: 1200px;
     justify-content: space-between;
     margin: 0 auto;
 }
@@ -199,7 +197,6 @@ body {
 
 .about_work {
     background-color: var(--background-color);
-    margin-bottom: 94px;
 }
 
 .about_work__container {
@@ -233,11 +230,9 @@ body {
 }
 
 .team__container {
-    padding-top: 94px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 1200px;
     margin: 0 auto;
 }
 .team__list {
@@ -245,7 +240,6 @@ body {
     display: flex;
     justify-content: space-around;
     padding-left: 0;
-    margin-bottom: 94px;
 }
 
 .team__item {
@@ -279,11 +273,17 @@ body {
 
 /* menu buttons */
 
+.button__box,
+.photo__box { 
+    margin: 0 auto;
+}
+
 .menu__list {
     list-style-type: none;
     display: flex;
-    justify-content: center;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn__item {
@@ -295,7 +295,8 @@ body {
     border: none;
     border-radius: 4px;
     letter-spacing: 0.03em;
-    padding: 6px 22px;;
+    padding: 6px 22px;
+    margin:8px
 }
 
 .btn__item:hover,
@@ -304,21 +305,45 @@ body {
     background-color: var(--background-hover);
 }
 
+/* photo box */
+
 .sites__list {
     list-style-type: none;
+    margin: 0;
+    padding: 50px 0 0 0;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: auto auto auto;
+    
+}
+
+.main__portfolio {
+    margin: 0;
+    background: var(--background-color);
+    border: 1px solid #EEEEEE;
+}
+
+.title__box {
+    padding: 20px 24px;
+}
+
+.title__name, 
+.title__site {
+    margin: 0 auto;
 }
 
 .title__box .title__name {
     font-size: 18px;
-    line-height: 36px;
+    line-height: 2;
     font-weight: 700;
     letter-spacing: 0.06em;
+    
 }
 
 .title__box .title__site {
     color: var(--color-text);
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.875;
 }
 
 .title__box--color:hover, .title__box--color:focus {
@@ -329,17 +354,7 @@ body {
 
 .footer {
     background-color: var(--background-dark);
-}
-
-.footer .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    width: 1200px;
     height: 252px;
-    margin: 0 auto;
-
 }
 
 .logo__bottom {
@@ -349,25 +364,28 @@ body {
 .contact__list {
     font-style: normal;
     list-style-type: none;
-    justify-content: flex-start;
+    padding: 20px 0 60px 0;
+    margin: 0;
 }
 
 .address__item {
     color: var(--color-second);
     text-decoration: none;
     cursor: pointer;
-    gap: 9px;
 }
 
 .bottom__item {
+    padding: 20px 0 0 0;
+}
+.address__link {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
-    margin: 0 auto;
+    
 }
 
-.address__item:hover,
-.address__item:focus,
-.bottom__item:hover,
-.bottom__item:focus {
+.address__link:hover,
+.address__link:focus,
+.bottom__link:hover,
+.bottom__link:focus {
     color: var(--color-hover);
 }
